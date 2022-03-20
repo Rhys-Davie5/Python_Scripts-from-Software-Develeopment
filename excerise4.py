@@ -1,8 +1,7 @@
 import random
 
 # ----------------------------------------------------------------------------------------------------------------------
-from typing import Any
-
+#from typing import Any
 count = 0
 countdown = 6
 Countdown1 = 6
@@ -44,24 +43,30 @@ def userguess():
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-    if userboard1 == userguess100 and userboard2 == userguess200:
-        print("Both of them are a match, the first pair", userguess100, "was a", useritem2, "and the second pair", userguess200, "was a", useritem3)
-        print("you have",countdown-1,"pairs left")
-
-    else:
-        print("Sorry that was not a match, the first pair", userguess100,"was a",useritem2, "and the second pair", userguess200, "was a", useritem3)
-        print("you have", Countdown1, "pairs left")
-
     if countdown == 0:
         print("well done, you got them all. you did it in",count,"turns")
         exit()
 
-    print("you've had", count, "turn(s) so far")
+    if userboard1 == userguess100 and userboard2 == userguess200:
+        print("Both of them are a match, the first pair", userguess100, "was a", useritem2, "and the second pair", userguess200, "was a", useritem3)
+        print("you have",countdown,"pairs left")
+        print("you have", count, "turn(s) so far")
+
+    else:
+        print("Sorry that was not a match, the first pair", userguess100, "was a", useritem2, "and the second pair",userguess200, "was a", useritem3)
+        print("you have", Countdown1, "pairs left")
+        print("you have" ,count, "turn(s) so far")
+
+
+
+
+
+
     print()
 
     repeat=userguess()
     print(repeat)
-# -----------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
 
 print("Welcome to the pairs game! There are 6 pairs to find")
 print("Here is the board")
