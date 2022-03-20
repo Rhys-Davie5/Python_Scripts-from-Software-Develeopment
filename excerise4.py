@@ -44,7 +44,7 @@ def userguess():
 # ----------------------------------------------------------------------------------------------------------------------
 
     if Pairs == 6:
-        print("well done, you got them all. you did it in", Pairs, "pairs")
+        print("well done, you got them all. you did it in", turns, "turns")
         print("you have succesfully obtained", Pairs, "pairs, congratulations!")
         exit()
 
@@ -61,15 +61,8 @@ def userguess():
 
     elif userboard1 != userguess100 and userboard2 != userguess200:
         print("Both of them are not a match, the first pair", userguess100, "was a", useritem2, "and the second pair", userguess200, "was a", useritem3)
-        print("you now have", Pairs, "pair(s)")
+        print("you now have", Pairs-1, "pair(s)")
         print("you have", turns, "turn(s) so far")
-
-
-   # else:
-        #print("Sorry that was not a match")
-       # print("you now have", Pairs, "pair(s)")
-       # print("you have", turns, "turn(s) so far")
-
 
 # ----------------------------------------------------------------------------------------------------------------------
     print()
