@@ -2,31 +2,18 @@ import random
 
 # ----------------------------------------------------------------------------------------------------------------------
 turns = 0
+SetPairs = 6
 Pairs = 0
-countdown = 6
-Same = 6
+
 
 def userguess():
-    global turns # count how many times ive looped
-    global countdown # take away completed pairs
-    global Same # number stays the same
-    global Pairs
-    turns=turns+1  # adds a 1
-    countdown=countdown-1  # takes away 1
-    Same=Same+0  # stays the same
-    Pairs=Pairs+1
-
     userboard1 = random.randint(0, 10)
     userboard2 = random.randint(0, 10)
-
     print(userboard1)
     print(userboard2)
-
     #print(userboard1)
     #print(userboard2)
-
 # ----------------------------------------------------------------------------------------------------------------------
-
     userguess100 = int(input("Please enter guess 1: "))
     while userguess100 > 10:
         print("that number is too big, try a smaller number")
@@ -44,27 +31,45 @@ def userguess():
         userguess100 = int(input("Please enter guess 2: "))
 
     useritem = ["dog", "cat", "turtle", "snake", "hamster", "lion", "wolf", "monkey", "bird", "dinosaur", "dragon"]
-    useritem2 = (useritem[userguess100])
-    useritem3 = (useritem[userguess200])
+    useritem2 = (useritem[userguess100]) # guess 1 animal
+    useritem3 = (useritem[userguess200]) # guess 2 animal
+
 # ----------------------------------------------------------------------------------------------------------------------
-
-
-
+    global turns  # count how many times ive looped
+    global Pairs
+    global SetPairs
+    turns = turns + 1  # adds a 1
+    Pairs = Pairs + 1 # adds a 1
+    SetPairs = SetPairs
 # ----------------------------------------------------------------------------------------------------------------------
 
     if Pairs == 6:
+        print("well done, you got them all. you did it in", Pairs, "pairs")
+        print("you have succesfully obtained", Pairs, "pairs, congratulations!")
+        exit()
+
+    if turns == 6:
         print("well done, you got them all. you did it in", turns, "turns")
         print("you have succesfully obtained", Pairs, "pairs, congratulations!")
         exit()
 
     if userboard1 == userguess100 and userboard2 == userguess200:
-        print("Both of them are a match, the first pair", userguess100, "was a", useritem2, "and the second pair", userguess200, "was a", useritem3)
-        print("you now have",Pairs,"pair(s)")
+        print("Both of them are a match, the first pair", userguess100, "was a", useritem2, "and the second pair",
+              userguess200, "was a", useritem3)
+        print("you now have", Pairs, "pair(s)")
+        print("you have done", turns, "turn(s)")
+
+    elif userboard1 != userguess100 and userboard2 != userguess200:
+        print("Both of them are not a match, the first pair", userguess100, "was a", useritem2, "and the second pair", userguess200, "was a", useritem3)
+        print("you now have", Pairs, "pair(s)")
         print("you have", turns, "turn(s) so far")
 
-    else:
-        print("Sorry that was not a match")
-        print("You have used", turns, "turn(s) so far")
+
+   # else:
+        #print("Sorry that was not a match")
+       # print("you now have", Pairs, "pair(s)")
+       # print("you have", turns, "turn(s) so far")
+
 
 # ----------------------------------------------------------------------------------------------------------------------
     print()
