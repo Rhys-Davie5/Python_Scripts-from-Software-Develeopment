@@ -31,3 +31,8 @@ useritem3 = (useritem[userguess200]) # guess an animal for guess 1
 
 if "dog" in useritem and useritems:
     print("Thats a match!")
+
+if "cat" in useritem and useritems:
+    print("Thats a match")
+
+
