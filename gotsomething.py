@@ -27,10 +27,12 @@ for counter in range(0, 10):
     print(useritem[counter])
 
 useritem2 = (useritem[userguess100]) # guess an animal for guess 1
-useritem3 = (useritem[userguess200]) # guess an animal for guess 1
+useritem3 = (useritems[userguess200]) # guess an animal for guess 1
 
 if "dog" in useritem and useritems:
     print("Thats a match!")
+
+
 
 if "cat" in useritem and useritems:
     print("Thats a match")
