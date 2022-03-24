@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18c2ed9-e7ec-4362-871a-df662072f0db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/gotsomething.py" beforeDir="false" afterPath="$PROJECT_DIR$/gotsomething.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test123.py" beforeDir="false" afterPath="$PROJECT_DIR$/test123.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.gotsomething">
+  <component name="RunManager" selected="Python.excerise4">
     <configuration name="excerise4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Scripts" />
       <option name="INTERPRETER_OPTIONS" value="" />
