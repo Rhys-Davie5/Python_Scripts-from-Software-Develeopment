@@ -23,27 +23,21 @@ while userguess200 < 0:
 
 useritem = ["dog", "cat", "turtle", "snake", "hamster", "lion", "wolf", "monkey", "bird", "dinosaur", "dragon"]
 useritems = ["dog", "cat", "turtle", "snake", "hamster", "lion", "wolf", "monkey", "bird", "dinosaur", "dragon"]
-#for counter in range(0, 10):
- #   print(useritem[counter])
+
 
 useritem2 = (useritem[userguess100]) # get animal for guess 1
 useritem3 = (useritems[userguess200]) # get an animal for guess 1
 
 print(useritem2, useritem3)
 
-
 if useritem2 == useritem3:
     print("Thats a match!")
-    #pop
+    useritem.remove(useritem2 and useritem3)
     totalno=totalno-1
 
 else:
     print("Not a match!")
 
 
-
-
-#if "cat" in useritem2 and useritem3:
-    #print("Thats a match")
-
-
+if totalno == 0:
+    print("fin")
