@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d18c2ed9-e7ec-4362-871a-df662072f0db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gotsomething.py" beforeDir="false" afterPath="$PROJECT_DIR$/gotsomething.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test123.py" beforeDir="false" afterPath="$PROJECT_DIR$/test123.py" afterDir="false" />
     </list>
@@ -111,8 +112,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.gotsomething" />
-        <item itemvalue="Python.excerise4" />
         <item itemvalue="Python.test123" />
+        <item itemvalue="Python.excerise4" />
       </list>
     </recent_temporary>
   </component>

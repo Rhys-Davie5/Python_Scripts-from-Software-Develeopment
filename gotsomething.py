@@ -1,5 +1,7 @@
 import random
 totalno = 10
+turns = 0
+Pairs = 0
 userboard1 = random.randint(0, 10)
 userboard2 = random.randint(0, 10)
 print(userboard1)
@@ -40,7 +42,8 @@ if useritem2 == useritem3:
 else:
     print("Not a match!")
 
-
+if len (useritem) == 0
+    
 
 
 #if "cat" in useritem2 and useritem3:
