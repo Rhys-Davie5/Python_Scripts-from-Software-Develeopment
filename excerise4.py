@@ -3,7 +3,7 @@ import random
 # ----------------------------------------------------------------------------------------------------------------------
 turns = 0
 SetPairs = 6
-#Pairs = 0
+Pairs = 0
 PairsN = 1
 
 def userguess():
@@ -50,7 +50,7 @@ def userguess():
 
 # ----------------------------------------------------------------------------------------------------------------------
     global turns  # count how many times ive looped
-  #  global Pairs
+    global Pairs
     global SetPairs
     global PairsN
     turns = turns + 1  # adds a 1
