@@ -14,7 +14,6 @@ def userguess():
     #print(userboard1)
     #print(userboard2)
 
-    userTurns = input("How many turns do you want?")
 # ----------------------------------------------------------------------------------------------------------------------
     userguess100 = int(input("Please enter guess 1: "))
     while userguess100 > 10:
