@@ -11,11 +11,12 @@ def intro():
     userboard = "0 1 2 3 4 5 6 7 8 9 10"
     print(userboard)
     print("? ? ? ? ? ? ? ? ? ? ?")
-
 intro()
 while countdown > 0:
     userboard1 = random.randint(0, randomMax)  # 0 is dog and 10 is dragon
     userboard2 = random.randint(0, randomMax)
+    print(userboard1)
+    print(userboard2)
     userguess100 = int(input("Please enter guess 1: "))
     while userguess100 > 10:
         print("that number is too big, try a smaller number")
