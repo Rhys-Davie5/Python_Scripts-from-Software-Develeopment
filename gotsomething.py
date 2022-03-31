@@ -42,8 +42,8 @@ if useritem2 == useritem3:
 else:
     print("Not a match!")
 
-if len (useritem) == 0
-    
+if len (useritem) == 0:
+
 
 
 #if "cat" in useritem2 and useritem3:
