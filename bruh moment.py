@@ -11,4 +11,3 @@ if userDay==1 or userDay==21 or userDay ==31:
     print("st")
 elif userDay==2 or userDay==22:
     print("nd")
-    
